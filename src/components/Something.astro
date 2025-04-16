@@ -1,0 +1,36 @@
+---
+import '../styles/something.css';
+
+import nyanCat from '../assets/nyan-cat.gif';
+---
+
+<div class="outerspace">
+  <img src={nyanCat.src} alt="Nyan Cat is here!" class="nyan-cat" />
+</div>
+
+<script>
+  import { gsap } from "gsap";
+
+  let tl = gsap.timeline();
+
+  let windowWidth = window.innerWidth
+
+  tl
+  .from(".nyan-cat", {
+    x: 0 - 150,
+    duration: 0,
+  })
+  .to(".nyan-cat", {
+    x: windowWidth + 50,
+    duration: 3,
+  })
+  .to(".nyan-cat", {
+    rotationY: 180,
+  })
+  .to(".nyan-cat", {
+    x: 0 - 150,
+    duration: 3,
+  })
+  .repeat(-1)
+  .repeatDelay(1);
+</script>

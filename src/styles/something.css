@@ -1,0 +1,20 @@
+.outerspace {
+  background: url(../assets/space.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  max-width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: -1
+}
+
+.nyan-cat {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  z-index: 0;
+}

@@ -1,0 +1,18 @@
+.i-dunno-text-maybe {
+  background-color: rgba(255,255,255,0.9);
+  width: 100vw;
+  height: 100vh;
+  mask: radial-gradient(79px, #0000 100%, #000);
+  position: relative;
+}
+
+.a-hole-border {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  outline: 2px solid #888;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
